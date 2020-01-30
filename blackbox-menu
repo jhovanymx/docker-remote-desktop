@@ -1,0 +1,5 @@
+[begin] (Blackbox)
+    [exec] (Terminal) {urxvt -fn "xft:Terminus:size=14"}
+    [exec] (Web Browser) {qupzilla}
+    [exec] (MegaSync) {megasync}
+[end]
