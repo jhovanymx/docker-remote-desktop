@@ -16,6 +16,7 @@ RUN sudo apt-get update -qqy && \
 RUN sudo mkdir -p /opt/noVNC/utils/websockify && \
     wget -qO- "https://github.com/kanaka/noVNC/tarball/master" | sudo tar -zx --strip-components=1 -C /opt/noVNC && \
     wget -qO- "https://github.com/kanaka/websockify/tarball/master" | sudo tar -zx --strip-components=1 -C /opt/noVNC/utils/websockify
+ADD index.html  /opt/noVNC
 
 # Install MegaSync
 RUN sudo apt-get -y install libc-ares2 libcrypto++9v5 libmediainfo0v5 libraw15 libzen0v5 apt-transport-https
